@@ -6,6 +6,8 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Cache-Control" content="no-store" />
+    <link rel="icon" href="data/image/web-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="data/image/web-icon.png" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
     <link rel="stylesheet" href="./data/fontawesome/css/all.min.css">
