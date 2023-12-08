@@ -1,0 +1,247 @@
+.cart-container {
+    width: 1400px;
+    margin: auto;
+    background-color: white;
+    padding-bottom: 20rem;
+ 
+    }
+.cart {
+    width: 100%;
+    padding: 4rem;
+}
+.cart header {
+    font-size: 3rem;
+    margin: 6rem;
+    line-height: 6rem;
+    border-bottom:solid 1px gray ;
+}
+.cart-product{
+    overflow: hidden;
+}
+.save-box{
+    overflow: hidden;
+}
+.cart-product-item {
+border-bottom: solid 1px rgb(226, 226, 226);
+margin-bottom: 2rem;
+display: flex;
+width: 100%;
+position: relative;
+left: 0rem;
+transition: all 0.4s;
+}
+.cart-product-moda-box{
+   position: absolute;
+    z-index: 999;
+    background-color: rgba(128, 128, 128,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid   1px  rgb(242, 242, 242);
+    width: 0rem;
+   height: 22rem;
+   transition: all 0.4s;
+
+}
+
+.cart-product-moda-item{
+   margin: 4rem;
+   opacity: 1;
+   border-radius: 0.4rem;  
+   text-align: center;
+   font-size: 2rem;
+   color: white;
+   line-height: 4.5rem;
+   user-select: none;
+}
+.cart-product-moda-item:hover{
+    cursor: pointer;
+    background-color: #3998e6;;
+}
+.save-box-moda-box{
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(128, 128, 128,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid   1px  rgb(242, 242, 242);
+    width: 0rem;
+   height: 22rem;
+   transition: all 0.4s;
+}
+.save-box-moda-item{
+    margin: 4rem;
+    opacity: 1;
+    border-radius: 0.4rem;  
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    line-height: 4.5rem;
+    user-select: none;
+}
+.save-box-moda-item:hover{
+    cursor: pointer;
+    background-color: #3998e6;;
+}
+
+
+
+.yes{
+ width: 25rem;
+ height: 5rem;
+ background-color: #077ee0;
+ 
+}
+.no{
+    width: 25rem;
+    height: 5rem;
+    background-color: #077ee0;
+}
+.cart-product-link {
+    text-decoration: none;
+}
+.cart-product-item-img {
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+   
+   
+}
+.cart-product-item-name {
+ font-size: 2rem;
+ margin: 0.5rem;
+ color: black;
+}
+.cart-price {
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: red;
+}
+.cart-product-info {
+    font-size: 1.5rem;
+    color: black;
+    line-height: 2.5rem;
+}
+.cart-control {
+    margin: 1rem;
+    display: flex;
+}
+
+.cart-save {
+    width: 20rem;
+}
+
+.cart-control button:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.cart-pannel {
+    flex: 1;
+    height: 100px;
+    font-size: 2rem;
+    text-align: end;
+    margin-right: 10rem;
+    line-height: 6rem;
+    position: relative;
+}
+
+.syoukei-btn {
+    background-color:  #077ee0;
+    text-align: center;
+    width: 20rem;
+    height: 4rem;
+    border-radius: 8px;
+    line-height: 3.4rem;
+    color: white;
+    position: absolute;
+    right: 0px;
+}
+.syoukei-btn:hover{
+    user-select: none;
+    cursor: pointer;
+    background-color:  #3998e6;
+}
+.cart-pannel button:hover {
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+}
+.save {
+    width: 100%;
+    padding: 4rem;
+}
+.save header {
+    font-size: 3rem;
+    margin: 6rem;
+    line-height: 6rem;
+    border-bottom:solid 1px gray ;
+    width: 60rem;
+    margin-top: 10rem;
+}
+.save-ctr button{
+    width: 10rem;
+}
+.cart-empty {
+    background-image: url('../image/cart empty.png');
+    background-repeat: no-repeat;
+    background-size: 40rem;
+    background-position: 50%;
+    min-height: 50rem;
+}
+.delete-btn{
+    margin-left: 1rem;
+    width: 8rem;
+    background-color: #077ee0;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+}
+.later-btn{
+    margin-left: 1rem;
+    width: 8rem;
+    background-color: #077ee0;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+}
+.delete-btn:hover,
+.later-btn:hover{
+    user-select: none;
+    cursor: pointer;
+    background-color: #3998e6; 
+}
+.suuryou {
+    margin-left: 1rem;
+    width: 15%;
+    height: 3rem;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    color: rgb(81, 81, 81);
+}
+.suuryou:focus{
+    border: solid 1px #077ee0;
+    border-radius: 4px;
+}
+.save-delete-btn{
+    margin-left: 1rem;
+    width: 8rem;
+    background-color: #077ee0;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+}
+.return-btn{
+    margin-left: 1rem;
+    width: 12rem;
+    background-color: #077ee0;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+}
+.save-delete-btn:hover,
+.return-btn:hover{
+    user-select: none;
+    cursor: pointer;
+    background-color: #3998e6; 
+}

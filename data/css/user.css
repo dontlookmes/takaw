@@ -1,0 +1,479 @@
+.user-body{
+    width: 1400px;
+    background-color: white;
+    margin: auto;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+}
+.user-body-box{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    
+}
+
+.user-box-header{
+    display: flex;
+    align-items: end;
+    font-size: 4rem;
+    background-color: white;
+    position: absolute;
+    top:-1.5rem;
+    left: 2rem;
+    color: gray;
+
+
+}.user-name{
+color: gray;
+margin-bottom: 5rem;
+padding-right: 1.5rem;
+}
+
+.user-box{
+    width: 80%;
+    height: 100%;
+    border: solid 1px gray;
+    position: relative;
+    margin-top: 8rem;
+    border-radius: 2rem;
+    margin: auto;
+}
+.user-box-element-container{
+    margin-top: 15rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    color:gray;
+    
+}
+.user-box-element {
+    /* background-color: rgba(138, 189, 244, 0.1); */
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+}
+.user-box-element-header{
+    font-size: 3rem;
+
+}
+.user-box-element-data{
+    font-size: 2rem;
+    margin: auto;
+    margin-top: 3rem;
+    width: 80%;
+}
+.user-data-box{
+    text-align: start;
+     display: flex;
+     margin-bottom: 3rem;
+}
+.user-data-box input{
+   font-size: 2rem;
+   background-color: rgba(138, 189, 244, 0);
+   outline: none;
+   border-radius: 0.5rem;
+   border: solid 1px rgba(138, 189, 244, 0);
+}
+
+.user-name-box{
+    margin-bottom: 4rem;
+    margin-left: 10rem;
+}
+.user-gender-box{
+    margin-bottom: 4rem;
+    margin-left: 10rem;
+}
+.gender-input label{
+    margin-left: 4rem;
+}
+.user-email-box{
+    margin-bottom: 4rem;
+    justify-content: space-around;
+}
+.user-email-input-box{
+    
+    display: flex;
+}
+.user-phonemunber-box input{
+    text-align: center;
+}
+.user-phonemunber-box{
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+}
+.user-password-box{
+    margin-left: 4rem;
+    justify-content: space-around;
+}
+.user-address-box{
+    text-align: end;
+}
+.user-zipcode-box{
+    margin-left: 10rem;
+}
+.user-ken-box{
+    margin-left:10rem;
+}
+
+.user-banchi-box{
+    margin-left: 4rem;
+}
+.user-tate-box{
+    margin-left: 2rem;
+}
+#namerm{
+    font-size: 1.3rem;
+}
+#lastnamerm{
+    font-size: 1.3rem;
+}
+#name{
+    margin-top: 1rem;
+}
+.Personal-information{
+    margin-bottom: 10rem;
+    background-color: rgba(195, 227, 253, 0.1);
+    padding-bottom: 1.5rem;
+    border-radius: 2rem;
+    position: relative;
+    box-shadow: 5px 5px 10px #888888;
+}
+.edit-btn{
+    width: 96%;
+    line-height: 4rem;
+    text-align: end;
+   
+}
+.edit-btn:hover{
+    cursor: pointer;
+    color: black;
+}
+.email-edit-btn:hover,
+.password-edit-btn:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.login-info-send-btn{
+    color: #ffffff;
+    font-size:1.4rem;
+    background-color: #077ee0;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    line-height: 2.3rem;
+    width: 4rem;
+    text-align: center;
+    visibility: hidden;
+  
+}
+.login-info-send-btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.cancel-btn{
+    display: none;
+    font-size: 2.5rem;
+}
+.personal-info-update-btn{
+    margin-left: 60rem;
+    border: none;
+    background-color:rgba(111, 156, 193, 0);
+    color: #077ee0;
+    font-size: large;
+   visibility: hidden;
+}
+.personal-info-update-btn:hover{
+    cursor: pointer;
+}
+.login-infomation{
+    margin-bottom: 10rem;
+    background-color: rgba(195, 227, 253, 0.1);
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px #888888;
+    position: relative;
+}
+.personar-info-error{
+    color: red;
+    font-size: 1.4rem;
+    margin-left: 16rem;
+    margin-bottom: 0.5rem;
+    visibility: hidden;
+}
+.login-info-moda{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #f0f5f9;
+    border-radius: 2rem;
+    top:0rem;
+    left: 0rem;
+    transition: all 0.4s;
+    text-align: center;
+    z-index: 999;
+}
+.new-email-update{
+    color: #077ee0;
+    background-color: rgba(111, 156, 193, 0);
+    border: none;
+}
+label[for='new-email']{
+    font-size: 1.5rem;
+    margin-right: 2.2rem;
+}
+.login-moda-item{
+    margin: 0px;
+    margin-top: 2rem;
+    position: relative;
+    display: none;
+    
+}
+.login-moda-item input{
+    width: 15rem !important;
+    background-color: rgba(0, 0, 0,0);
+}
+.email-update-btn button{
+    font-size: 2rem;
+    border: none;
+    background-color: rgba(0, 0, 0,0);
+    color: #077ee0;
+    margin-top: 5rem;
+}
+.email-update-btn button:hover{
+    cursor: pointer;
+}
+.new-email-verify-label{
+    left: 28rem !important;
+} 
+.new-email-verify:not(:placeholder-shown)+ label,
+.new-email-verify:focus + label{
+    top:1rem !important;
+    left: 18rem !important;
+}    
+.new-email-code-resend{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    position: absolute;
+    left: 44rem;
+    top: -0.5rem;
+    transform: rotate(145deg);
+    transition: all 1s;
+}
+.new-mail-cancel-btn:hover{
+    cursor: pointer;
+    color: black;
+}
+.new-mail-cancel-btn{
+    position: absolute;
+    right: 3rem;
+    top: -1rem;
+    font-size: 2.5rem;
+
+}
+.new-pass-cancel-btn{
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+    font-size: 2.5rem;
+}
+.new-pass-cancel-btn:hover{
+    cursor: pointer;
+    color: black;
+}
+.pass-update-btn{
+    margin-left: 20rem;
+}
+.pass-update-btn button{
+    font-size: 2rem;
+    border: none;
+    background-color: rgba(0, 0, 0,0);
+    color: #077ee0;
+    margin-top: 5rem;
+    margin-right: 4rem;
+}
+.pass-update-btn button:hover{
+    cursor: pointer;
+}
+.new-pass{
+    width: 78%;
+    margin-left:1rem;
+    margin-top: 2rem;
+    display: none;
+
+}
+.new-pass input{
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+}
+.new-pass-hidden{
+    top: 0.5rem;
+    right: 2.5rem;
+    
+    
+}
+.new-pass-show{
+    top: 0.5rem;
+    right: 2.5rem;
+    
+}
+.new-passcf-hidden{
+    top: 0.5rem;
+    right: 2.5rem;
+}
+.new-passcf-show{
+    top: 0.5rem;
+    right: 2.5rem;
+}
+
+#email{
+    border: solid 1px rgba(0, 0, 0,0);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.edit-cancel{
+    font-size: 2.5rem;
+    display: none;
+}
+.edit-cancel:hover{
+    cursor: pointer;
+    color: black;
+   
+}
+#user-password{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-right: 2.5rem;
+}
+.user-password-input-box{
+    display: flex;
+    position: relative;
+}
+.user-pass-hidden{
+    right: 4.5rem;
+    display: none;
+}
+.user-pass-show{
+    right: 4.5rem;
+    display: none;
+}
+.edit-password-cancel{
+    /* display: block; */
+}
+.address-box{
+    
+}
+.address-box div{ 
+    line-height: 2.5rem;
+    background-color: rgba(195, 227, 253, 0.1);
+    padding:4rem 4rem 1rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px #888888;
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+    /* height: 0px;
+    padding: 0px; */
+}
+.address-add-cancel-btn{
+    font-size: 2.5rem;
+    margin-left: 95%;
+}
+.address-add-cancel-btn:hover{
+    cursor: pointer;
+}
+.address-list-control{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+.address-list-control button{
+    border: none;
+    background-color: rgba(0, 0, 0,0);
+    color: #077ee0;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.address-view-more-btn{
+    display: none;
+}
+.address-minisize-btn{
+    display: none;
+}
+.address-list-control button:hover{
+    cursor: pointer;
+} 
+
+.address-box div button{
+    background-color: rgba(111, 156, 193, 0);
+    border: none;
+    color: #077ee0;
+    margin-top: 3rem;
+    
+    
+}
+
+.address-box div button:hover{
+    cursor: pointer;
+}
+.address-remove-btn{
+    margin-left: 80%;
+}
+.address-edit-btn{
+    margin-left: 4%;
+}
+.remove-btn-item{
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #f9fcff;
+    padding: 1rem;
+    border-radius: 1rem;
+    top:0px;
+    right: 0rem;
+    line-height: 4rem;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.yes-btn{
+margin-right: 6rem;
+}
+.remove-btn-item-header{
+    display: block;
+}
+.address-box div button{
+}
+.address-edit-box{
+    background-color:rgba(195, 227, 253, 0.1);
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px #888888;
+    height: 0px;
+    padding: 0px;
+}
+#zipcode-head,
+#zipcode-foot{
+    width: 6rem;
+    line-height: 2.5rem;
+    border-radius: 0.7rem;
+    border: solid 1px gray;
+    outline: none;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+#zipcode-foot{
+    width: 7rem;
+}
+.address-update-btn{
+    border: none;
+    font-size: 3rem;
+    background-color: rgba(195, 227, 253, 0);
+    color: #077ee0;
+    margin-left: 30rem;
+}
+.address-update-btn:hover{
+    cursor: pointer;
+}

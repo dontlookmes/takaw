@@ -1,0 +1,197 @@
+.fogot-password-body{
+    width: 1400px;
+    margin: auto;
+    background-color: white;
+    padding-top: 10rem;
+    padding-bottom: 40rem;
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 25rem;
+}
+
+.forgot-password-box{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    width: 40%;
+    height: 60rem;
+    margin: auto;
+    border:solid 1px rgb(201, 201, 201);
+    border-radius: 3rem;
+    transition: all 0.4s;
+    
+}
+.fogot-password{
+    position: absolute;
+    display: flex;
+    top: 4rem;
+    
+    left: 2.45rem;
+    /* left: -47.15rem; */
+    /* left: -97.15rem; */
+    transition: all 0.4s;
+    
+}
+.forgot-pass-header{
+    line-height: 10rem;
+}
+.forgot-pass-item,
+.forgot-pass-item2,
+.forgot-pass-item3{
+    position: relative;
+    margin-top: 2rem;
+    width: 50rem;
+    
+}
+.forgot-pass-item2,
+.forgot-pass-item3{
+    visibility: hidden;
+}
+
+label[for='forgot-pass'] {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    margin-right: 7rem;
+    margin-top: 40rem;
+    
+}
+.fguser-icon{
+    font-size: 3rem;
+    color:gray;
+}
+.forgot-pass-email{
+    font-size: 2rem;
+    color: rgb(81, 81, 81);
+    line-height: 4rem;
+    margin-bottom: 1.6em;
+
+}
+.fgresend{
+    font-size: 1.8rem;
+    color: #077ee0;;
+    user-select: none;
+    margin-top: 4rem;
+    
+}
+#forgot-pass{
+    width: 30rem;
+    line-height: 2.5rem;
+    border-radius: 0.7rem;
+    border: solid 1px gray;
+    padding-left:1rem ;
+    margin-top: 2rem;
+}
+label[for='fgverify-input']{
+    font-size: 2rem;
+    position: absolute;
+    color: #077ee0;
+    left: 18rem;
+    top:11rem;
+    transition: 0.25s ease;
+    user-select: none;
+}
+#fgverify-input{
+    outline: none;
+    width: 15rem;
+    border: none;
+    border-bottom: solid 1px #077ee0;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    color: rgb(89, 89, 89);
+    text-align: center;
+}
+#fgverify-input:not(:placeholder-shown)+ label,
+#fgverify-input:focus + label{
+
+    left: 6rem;
+}
+#new-pass,
+#new-pass-confirm{
+    width: 30rem;
+    line-height: 2.5rem;
+    border-radius: 0.7rem;
+    border: solid 1px gray;
+    padding-left:1rem ;
+    margin-top: 2rem;
+    text-align: start;
+    padding-right: 2.4rem;
+}
+label[for='new-pass'],
+label[for='new-pass-confirm']{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    margin-right: 16rem;
+}
+
+
+.fgverify-btn{
+    width: 15rem;
+    height: 4rem;
+    margin-top: 12rem;
+    margin-bottom: 6rem;
+    border-radius: 1rem;
+    border: solid 1px gray;
+    font-size: 2rem;
+}
+.new-pass-submit,
+.fgsubmit{
+    width: 15rem;
+    height: 4rem;
+    margin-top: 12rem;
+    margin-bottom: 6rem;
+    border-radius: 1rem;
+    border: solid 1px gray;
+    font-size: 2rem;
+}
+.new-pass-submit:hover,
+.fgverify-btn:hover,
+.fgsubmit:hover{
+    border: solid 1px black;
+    cursor: pointer;
+}
+.forgot-pass-error{
+    font-size: 1.5rem;
+    color: red;
+    visibility: hidden;
+    margin: 1rem;
+}
+
+.new-pass-hidden-icon{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 15.5rem;
+    right:10.5rem;
+    opacity: 0.2;
+
+}
+.new-pass-show-icon{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 15.5rem;
+    right:10.5rem;
+    opacity: 0.2;
+}
+.new-pass-confirm-hidden-icon{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 26.5rem;
+    right:10.5rem;
+    display: none;
+    opacity: 0.2;
+}
+.new-pass-confirm-show-icon{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 26.5rem;
+    right:10.5rem;
+    opacity: 0.2;
+
+}
+.new-pass-hidden-icon:hover,
+.new-pass-confirm-hidden-icon:hover,
+.new-pass-show-icon:hover,
+.new-pass-confirm-show-icon:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}

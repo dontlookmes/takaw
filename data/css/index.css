@@ -1,0 +1,16 @@
+.index-body-container {
+
+}
+.index-body {
+    width: 1400px;
+    margin: auto;
+}
+.index-body-box {
+    width: 100%;
+    height: 1000px;
+    background-color: antiquewhite;
+}
+.ch-box {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,246 @@
+.product-body-container {
+    width: 100%;
+}
+.product-body {
+    width: 1400px;
+    margin: auto;
+    background-color: white;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.product-ac {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    position: relative;
+}
+.product-ac-info {
+    width: 60%;
+    height: 100%;
+    border: solid 1px rgb(226, 226, 226);
+    border-radius: 8px;
+}
+.product-ac-info-box {
+    width: 100%;
+    height: 90%;
+    margin: 0px 1rem;
+   
+}
+.product-ac-img-ctr {
+    width: 60%;
+    height: 15%;
+    margin: auto;
+    position: absolute;
+    top:35%;
+    justify-content: space-between;
+    display: flex;
+   
+}
+.product-ac-img-ctr-btn {
+    width:7%;
+    height: 100%;
+    border-radius: 8px;
+    font-size: 4rem;
+    text-align: center;
+    line-height: 10rem;
+    opacity: 0.2;
+    cursor: pointer;
+    margin-right: 1.6rem;
+}
+.product-ac-img-ctr-btn:hover {
+    opacity: 0.5;
+}
+.product-ac-img-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.product-ac-img {
+   max-width: 100%;
+   max-height: 100%;
+   object-fit:contain ;
+   margin: auto;
+   transition: all 0.4s;
+
+}
+.product-ac-img-pannel {
+    width: 100%;
+    height: 10%;
+}
+.img-pannel-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img-pannel-img img {
+    max-height: 100%;
+    padding: 8px 10px;
+    margin: 4px 15px;
+    border: solid 1px rgb(226, 226, 226);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.product-ac-control {
+    width: 40%;
+    height: 100%;
+}
+
+.product-ac-control-info {
+    width: 100%;
+    padding-left: 2rem;
+    margin-top: 8rem;
+}
+.product-name {
+    font-size: 4rem;
+    line-height: 8rem;
+    
+}
+.product-price {
+    font-size: 3rem;
+    line-height: 8rem;
+    color: red;
+    border-bottom: solid 1px rgb(168, 168, 168);
+}
+.product-info {
+    font-size:2rem ;
+    line-height: 5rem;
+    font-weight: 600;
+}         
+.product-info span {
+    font-weight: 200;
+}               
+.product-ac-control-btn {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    
+}
+.product-btn{
+    width: 30%;
+    z-index: 9999;
+    height: 4rem;
+    border-radius: 10px;
+    background-color:  #077ee0;
+    color: rgb(255, 255, 255);
+    margin-top: 4rem;
+    cursor: pointer;
+    text-align: center;
+    line-height: 3.5rem;
+    font-size: 1.5rem;
+    user-select: none;
+}
+.product-btn:hover{
+    background-color: #3998e6;
+}
+.add-notify{
+    position:absolute;
+    width: 0%;
+    height: 0%;
+    z-index: 9;
+    background-color: #f8f8f8;
+    top:6rem;
+    left: 7.45rem;
+    border-radius: 8px;
+    border: solid 1px rgb(175, 175, 175);
+    transition: all 0.2s;
+   
+}
+.ruijiseihin {
+     width: 100%;
+     border: solid 1px rgb(201, 201, 201);
+     border-radius: 8px;
+}
+ .ruijiseihin header {
+    font-size: 5rem;
+    line-height: 10rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
+ }
+ .ruijiseihin-items {
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    width: 87%;
+    margin: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .active {
+    border: solid 3px #077ee0 !important;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+ }
+ .circle-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    font-size: 2rem;
+    opacity: 0;
+    transition: opacity 0.2s;
+    animation:spin 1s ease-in-out infinite;
+
+  }
+  
+  .check-mark {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #27ae60; /* Màu của dấu check */
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
+  .cart-show{
+    animation: addcarts 0.2s  ease-in forwards;
+    
+  }
+  .cart-hidden{
+    animation: addcarth 0.2s  ease-in forwards;
+  }
+  .spin{
+    animation:spin 1s ease-in-out infinite;
+  }
+  .fade-in{
+    animation: fadeIn 0s ease-out 1s forwards, hidden  0.2s ease-in 1s forwards;
+  }
+  .hidden{
+    animation: hidden  0.2s ease-in 0.2s forwards;
+    
+  }
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes hidden {
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes addcarts {
+    to{
+        width: 30%;
+        height: 70%;
+    }
+  }
+  @keyframes addcarth {
+    to{
+        width: 0%;
+        height: 0%;
+    }
+  }

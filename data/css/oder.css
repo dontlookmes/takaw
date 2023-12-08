@@ -1,0 +1,76 @@
+.oder-body{
+    width: 1400px;
+    margin: auto;
+    height: 10000px;
+    background-color: white;
+    padding-top: 20rem;
+    padding-bottom: 20rem
+}
+.oderadd-info header{
+    font-size: 4rem;
+    line-height: 10rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.oder-form-box{
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    border:solid 1px rgb(201, 201, 201);
+    border-radius: 3rem;
+    padding: 4rem;
+}
+.customer-info{
+    width: 90%;
+    margin: auto;
+    font-size: 2rem;
+    line-height: 2.5rem; 
+    border-bottom: solid 1px rgb(194, 194, 194);
+    margin-bottom: 6rem;
+}
+.oder-form-box header{
+    font-size: 3rem;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+}
+
+.customer-info button{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #077ee0;
+}
+.customer-info button:hover{
+    cursor: pointer;
+}
+.total{
+    margin-left: 35rem;
+    width: 60%;
+    font-size: 2rem;
+    line-height: 4rem;
+    border: solid 1px gray;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.syoukei{
+display: flex;
+justify-content: space-between;
+}
+.ship-fee{
+display: flex;
+justify-content: space-between;
+border-top: solid 1px rgb(237, 237, 237);
+}
+.zenbude{
+display: flex;
+justify-content: space-between;
+border-top: solid 1px rgb(237, 237, 237);
+}
+.seikyuu{
+display: flex;
+justify-content: space-between;
+border-top: solid 1px rgb(134, 134, 134);
+font-size: 2.5rem;
+}
+.seikyuu div:nth-child(2){
+    color: red;
+}

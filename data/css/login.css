@@ -1,0 +1,107 @@
+
+.login-body-container {
+    width: 100%;
+    
+}
+.login-body {
+    width: 1200px;
+    margin: auto;
+    padding-top: 10rem;
+    background-color: white;
+    font-size: 6rem;
+    line-height: 10rem;
+    text-align: center;
+    padding-bottom: 25rem;
+}
+.login-body header {
+    margin-bottom: 6rem;
+}
+.login-box {
+    width: 50%;
+    margin: auto;
+    border:solid 1px rgb(201, 201, 201);
+    border-radius: 3rem;
+}
+.login-form {
+    text-align: start;
+    font-size: 2rem;
+    line-height: 3rem;
+    border-radius: 2rem;
+    margin-top: 4rem;
+}
+.login-box-items{
+    width: 30rem;
+    margin: auto;
+}
+.login-box-items input {
+    width: 30rem;
+    line-height: 2.5rem;
+    border-radius: 0.7rem;
+    border: solid 1px gray;
+    outline: none;
+    margin-bottom: 4rem;
+    padding-left: 1rem;
+}
+
+
+.login-box-items-2 {
+    text-align: end;
+}
+.login-box-items-2 a{
+    text-decoration: none;
+    text-align: end;
+    margin-right: 7rem;
+    font-size: 1.6rem;
+    color: gray;
+}
+.login-box-items-2 a:hover {
+    color: rgb(0, 0, 0);
+}
+.login-form  button {
+    width: 20rem;
+    height: 6rem;
+    margin-left: 35%;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+    border: solid 1px gray;
+    font-size: 2rem;
+}
+
+.login-form  button:hover {
+    border: solid 1px black;
+    cursor: pointer;
+}
+.login-error-box{
+    color: red;
+    font-size: 1.5rem;
+    height: 2rem;
+    
+}
+.pass-input{
+    position: relative;
+
+}
+.login-pass-hidden-icon{
+    position: absolute;
+    top:0.65em;
+    right: 0.4em;
+    font-size: 0.85em;
+    opacity: 0.2;
+   transition: 0.4s;
+   display: none;
+}
+.login-pass-show-icon{
+    position: absolute;
+    top:0.65em;
+    right: 0.4em;
+    font-size: 0.85em;
+    opacity: 0.2;
+    transition: 0.4s;
+   
+}
+.login-pass-hidden-icon:hover,
+.login-pass-show-icon:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}

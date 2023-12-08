@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'hannari';
+    src: url('../font/hannari.ttf');
+}
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --page-color: rgb(249, 240, 235);
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    background-color: #f5f5f5;
+    margin: 0px;
+    padding: 0px;
+    font-size: 62.5%;
+    line-height: 1.7rem;
+    box-sizing: border-box;
+    background-size: 35%;
+    font-family: 'hannari',sans-serif;
+    background-position: 100%;
+}
+body {
+    margin: auto;
+    width: 100%;
+}
+.page-top {
+    position: relative;
+    display: flex;
+}
+.page-top-up {
+    display: none;
+    margin: auto;
+    width: 6.3rem; 
+    height: 6.3rem; 
+    font-size: 20px;
+    line-height: 1.4;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    color:rgb(243, 242, 242);
+    position:absolute;
+    z-index: 9999;
+    left: -60px;
+    top:7px;
+    border: none;
+    transition: all 0.1s;
+}
+.page-top-up:hover {
+    cursor: pointer;
+}
+.page-up-container {
+    margin: auto;
+    width: 1200px;
+    position: relative;
+}
