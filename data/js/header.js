@@ -244,7 +244,7 @@ searchBtn.addEventListener('click',function(){
     if(keyWord==""){
         return;
     }else{
-        var indexUrl = window.location.origin + "/takayama-master/index.php";
+        var indexUrl = window.location.origin + "/takayama/index.php";
         var currentUrl = window.location.href;
         
         if(currentUrl!=indexUrl){
@@ -254,7 +254,7 @@ searchBtn.addEventListener('click',function(){
         }
     }
 });
-var indexUrl = window.location.origin + "/takayama-master/index.php";
+var indexUrl = window.location.origin + "/takayama/index.php";
 var currentUrl = window.location.href;
 if(indexUrl===currentUrl){
 
