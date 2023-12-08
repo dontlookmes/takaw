@@ -59,57 +59,6 @@ reoder.addEventListener('change',function(){
 });
 
 
-// var clickFlag = false; // Biến cờ để kiểm tra sự kiện đã được gắn thêm hay chưa
-
-// function pageNumClick(event) {
-//     if (!clickFlag) { // Kiểm tra biến cờ
-//         clickFlag = true; // Đánh dấu sự kiện đã được gắn thêm
-//         for (var j = 0; j < pageIndex.length; j++) {
-//             pageIndex[j].classList.remove("footer-page-num-active");
-//         }
-//         event.target.classList.add("footer-page-num-active");
-//         filterPageLoad();
-//         reoderf();
-//     }
-// }
-
-// for (var i = 0; i < pageIndex.length; i++) {
-//     pageIndex[i].addEventListener('click', pageNumClick);
-// }
-
-
-// function pageNumClick(event) {
-//     for (var j = 0; j < pageIndex.length; j++) {
-//         pageIndex[j].classList.remove("footer-page-num-active");
-//     }
-//     event.target.classList.add("footer-page-num-active");
-//     scrollTop();
-//     // filterPageLoad();
-//     reoderf();
-// }
-
-// for (var i = 0; i < pageIndex.length; i++) {
-//     pageIndex[i].addEventListener('click', pageNumClick);
-//     var pageActive = document.querySelector('.footer-page-num-active');
-// }
-
-// for (var i = 0; i < pageIndex.length; i++) {
-//     (function(index) {
-//         pageIndex[index].addEventListener('click', function() {
-//             for (var j = 0; j < pageIndex.length; j++) {
-//                 pageIndex[j].classList.remove("footer-page-num-active");
-//             }
-//             pageIndex[index].classList.add("footer-page-num-active");
-//             var pageActive = document.querySelector('.footer-page-num-active');
-//             pageActive.removeEventListener("click",function(){
-                
-//             });
-//             filterPageLoad();
-//             reoderf();
-            
-//         });
-//     })(i);
-// }
 // Xử lý nút chuyển sang trái
 for (var i = 0; i < switchLeftBtn.length; i++) {
     switchLeftBtn[i].addEventListener('click', function () {

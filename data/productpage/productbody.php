@@ -58,12 +58,6 @@
                             <div class="product-atribute product-info">
                                 商品内寸 (高さ✕長さ✕幅): <span><?php echo $product['product_insize']; ?></span>
                             </div>
-                            <div class="product-atribute product-info">
-                                棚板耐荷重： <span><?php echo $product['tana_load']; ?></span>
-                            </div>
-                            <div class="product-atribute product-info">
-                                床板耐荷重: <span><?php echo $product['yuka_load']; ?></span>
-                            </div>
                         </div>
                         <div class="product-ac-control-btn">
                         <div class="add-notify">

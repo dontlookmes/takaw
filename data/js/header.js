@@ -65,8 +65,11 @@ function homeproductShow(productData, currentPage, itemsPerPage){
     }
 }
 function reoderf() {
-    
+    var pageNum='';
     footerPageNum.innerHTML=""
+    var catelogActive = document.querySelector('.catelog-item-active');
+    var cateLogValue= catelogActive.getAttribute('value');
+    var reorderValue= reoder.value;
     let xhr = new XMLHttpRequest();
     xhr.open('POST', 'data/api/homeapi.php', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
@@ -75,42 +78,49 @@ function reoderf() {
         if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
             let response =xhr.response;
             var productData = JSON.parse(response);
-            console.log(productData);
-            var pageNum= Math.ceil(productData.length/itemsPerPage);
-            pageTotal.innerHTML=pageNum;
-             homeproductShow(productData,currentPage,itemsPerPage);
-        
-            for (let i = 1; i <= pageNum; i++) {
-                footerPageNum.innerHTML += `<button class="footer-page-num">${i}</button>`;
-              }
-              var pageIndex = document.querySelectorAll('.footer-page-num');
-              pageIndex[0].classList.add('footer-page-num-active');
-              var pageActive = document.querySelector('.footer-page-num-active');
-              filterPageNum.innerHTML=pageActive.innerHTML;
-              for (var i = 0; i < pageIndex.length; i++) {
-                    (function(index) {
-                        pageIndex[index].addEventListener('click', function() {
-                            for (var j = 0; j < pageIndex.length; j++) {
-                                pageIndex[j].classList.remove("footer-page-num-active");
-                            }
-                            pageIndex[index].classList.add("footer-page-num-active");
-                            var pageActive = document.querySelector('.footer-page-num-active');
-                            currentPage=Number(pageActive.innerHTML);
-                            
-                            homeproductShow(productData,currentPage,itemsPerPage);
-                            filterPageNum.innerHTML=pageActive.innerHTML;
-                           
-                            scrollTop();
-                            
-                        });
-                    })(i);
-                }
+            if(productData.length ==0){
+                footerPageNum.innerHTML += `<button class="footer-page-num">1</button>`;
+                pageTotal.innerHTML=1;
+                productContai.innerHTML=`<div id="not-found">申し訳ございません。${catelogActive.innerHTML}の【${searchInput.value}】のキーワードが見つかりませんでした。</div>`;
+            }else{
+
+                pageNum= Math.ceil(productData.length/itemsPerPage);
+                pageTotal.innerHTML=pageNum;
+                 homeproductShow(productData,currentPage,itemsPerPage);
+            
+                for (let i = 1; i <= pageNum; i++) {
+                    footerPageNum.innerHTML += `<button class="footer-page-num">${i}</button>`;
+                  }
+                  var pageIndex = document.querySelectorAll('.footer-page-num');
+                  if(pageIndex){
+    
+                      pageIndex[0].classList.add('footer-page-num-active');
+                  }
+                  var pageActive = document.querySelector('.footer-page-num-active');
+                  filterPageNum.innerHTML=pageActive.innerHTML;
+                  for (var i = 0; i < pageIndex.length; i++) {
+                        (function(index) {
+                            pageIndex[index].addEventListener('click', function() {
+                                for (var j = 0; j < pageIndex.length; j++) {
+                                    pageIndex[j].classList.remove("footer-page-num-active");
+                                }
+                                pageIndex[index].classList.add("footer-page-num-active");
+                                var pageActive = document.querySelector('.footer-page-num-active');
+                                currentPage=Number(pageActive.innerHTML);
+                                
+                                homeproductShow(productData,currentPage,itemsPerPage);
+                                filterPageNum.innerHTML=pageActive.innerHTML;
+                               
+                                scrollTop();
+                                
+                            });
+                        })(i);
+                    }
+            }
                
         }
     };
-    var catelogActive = document.querySelector('.catelog-item-active');
-    var cateLogValue= catelogActive.getAttribute('value');
-    var reorderValue= reoder.value;
+    
     let data = {
         cateLogValue: cateLogValue,
         reorderValue: reorderValue,
@@ -234,7 +244,7 @@ searchBtn.addEventListener('click',function(){
     if(keyWord==""){
         return;
     }else{
-        var indexUrl = window.location.origin + "/takayama/index.php";
+        var indexUrl = window.location.origin + "/takayama-master/index.php";
         var currentUrl = window.location.href;
         
         if(currentUrl!=indexUrl){

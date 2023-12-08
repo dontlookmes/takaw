@@ -195,3 +195,10 @@ text-align: center;
     cursor:default !important;
     
 }
+#not-found{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    line-height: 3.5rem;
+}
