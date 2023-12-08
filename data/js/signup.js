@@ -114,6 +114,7 @@ signInForm.addEventListener('submit', function(event) {
 	   xhr.onload =function() {
 		if((xhr.readyState === XMLHttpRequest.DONE) && (xhr.status === 200)){
 			let data = xhr.response;
+         console.log(data)
 			if(data == 'checked'){
             signInForm.submit();
          }
