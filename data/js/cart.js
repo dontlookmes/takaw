@@ -177,7 +177,7 @@ function savecartLoad(cart){
     // Tạo thẻ div cho ảnh sản phẩm
     var productItemImg = document.createElement("div");
     productItemImg.classList.add("cart-product-item-img");
-    productItemImg.style.cssText ="background-image: url('data/image/productimg/"+cart[i].product_id+".png'); background-size: contain; background-repeat: no-repeat; background-position: 50%;";
+    productItemImg.style.cssText ="background-image: url('data/image/productimg/"+cart[i].product_id+".jpg'); background-size: contain; background-repeat: no-repeat; background-position: 50%;";
 
     // Thêm ảnh sản phẩm vào thẻ a
     productLink.appendChild(productItemImg);

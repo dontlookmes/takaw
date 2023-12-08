@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $response=['status'=>'error','status_text'=>'このメールアドレスは既に登録されています。'];
         echo json_encode($response);
     }else{
-        //  sendMail($email,$lastName,'verifyCode',$verifyCode);
+         sendMail($email,$lastName,'verifyCode',$verifyCode);
          $response=['status'=>'success','status_text'=>'done'];
         echo json_encode($response);
          

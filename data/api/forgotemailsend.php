@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $conn->query($sql);
    
     $lastName = $result->fetch_assoc()['lastname'];
-    // sendMail($email,$lastName,'verifyCode',$verifyCode);
+    sendMail($email,$lastName,'verifyCode',$verifyCode);
     echo 'done';
          
     

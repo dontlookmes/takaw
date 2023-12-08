@@ -1,19 +1,13 @@
-<?php
-        require_once 'productheader.php';
-        ?>
-
 
         <!-- body----------------------------------------------- -->
         <?php
+        require_once '../api/sqlconn.php';
 
         $path = $_SERVER['PHP_SELF'];
         $parts = explode("/", $path);
         $fileName = end($parts);
         $fileName= pathinfo($fileName, PATHINFO_FILENAME);
-        $conn = mysqli_connect('localhost', 'root', '', 'takayama');
-        if (!$conn) {
-            die("接続失敗：" . mysqli_connect_error());
-        }
+       
         $sql = "SELECT * FROM product WHERE product_id = '$fileName'";
         $result= $conn->query($sql);
         $product= mysqli_fetch_array($result,MYSQLI_ASSOC);
@@ -39,7 +33,7 @@
                                     <?php
                                     if(empty(!$imgCode)){
                                         foreach($imgCode as $imgCode){
-                                        echo '<img src="../image/productimg/'.$imgCode.'.png" alt="">';
+                                        echo '<img src="../image/productimg/'.$imgCode.'.jpg" alt="">';
                                         }
                                     }
                                     ?>
@@ -83,70 +77,8 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- <div class="ruijiseihin">
-                    <header>類似製品</header>
-                    <div class="ruijiseihin-items">
-                        <div class="product">
-                            <div class="product-item">
-                                <a href="" class="product-link">
-                                    <div class="product-item-img"></div>
-                                    <h4 class="product-item-name">小型収納庫「CH-010-E」</h4>
-                                    <div class="price">２６，８００円</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="product-item">
-                                <a href="" class="product-link">
-                                    <div class="product-item-img"></div>
-                                    <h4 class="product-item-name">小型収納庫「CH-010-E」</h4>
-                                    <div class="price">２６，８００円</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="product-item">
-                                <a href="" class="product-link">
-                                    <div class="product-item-img"></div>
-                                    <h4 class="product-item-name">小型収納庫「CH-010-E」</h4>
-                                    <div class="price">２６，８００円</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="product-item">
-                                <a href="" class="product-link">
-                                    <div class="product-item-img"></div>
-                                    <h4 class="product-item-name">小型収納庫「CH-010-E」</h4>
-                                    <div class="price">２６，８００円</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="product-item">
-                                <a href="" class="product-link">
-                                    <div class="product-item-img"></div>
-                                    <h4 class="product-item-name">小型収納庫「CH-010-E」</h4>
-                                    <div class="price">２６，８００円</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="product-item">
-                                <a href="" class="product-link">
-                                    <div class="product-item-img"></div>
-                                    <h4 class="product-item-name">小型収納庫「CH-010-E」</h4>
-                                    <div class="price">２６，８００円</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
         
         
-        <?php
-        require_once 'productfooter.php';
-        ?>
+      
