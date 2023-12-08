@@ -21,7 +21,7 @@ let currentPage = 1;
 searchBtn.addEventListener('click',function(){
     // pageReload();
     // footerPageNum.innerHTML="";
-    reoderf();
+    catelogMenu[0].click();
 })
 
 

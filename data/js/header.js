@@ -81,7 +81,7 @@ function reoderf() {
             if(productData.length ==0){
                 footerPageNum.innerHTML += `<button class="footer-page-num">1</button>`;
                 pageTotal.innerHTML=1;
-                productContai.innerHTML=`<div id="not-found">申し訳ございません。${catelogActive.innerHTML}の【${searchInput.value}】のキーワードが見つかりませんでした。</div>`;
+                productContai.innerHTML=`<div id="not-found">申し訳ございません。【${searchInput.value}】のキーワードが見つかりませんでした。</div>`;
             }else{
 
                 pageNum= Math.ceil(productData.length/itemsPerPage);
@@ -254,16 +254,22 @@ searchBtn.addEventListener('click',function(){
         }
     }
 });
-window.addEventListener('load', function () {
-    var keyWord = getFromLocalStorage('key_word');
-    footerPageNum.innerHTML='';
-    if(keyWord !== null){
-        
-        searchInput.value=keyWord;
-        searchBtn.click();
+var indexUrl = window.location.origin + "/takayama-master/index.php";
+var currentUrl = window.location.href;
+if(indexUrl===currentUrl){
 
-        localStorage.removeItem('key_word');
-    }else{
-        reoderf();
-    }
-});
+    window.addEventListener('load', function () {
+        var keyWord = getFromLocalStorage('key_word');
+        footerPageNum.innerHTML='';
+        if(keyWord !== null){
+            
+            searchInput.value=keyWord;
+            searchBtn.click();
+    
+            localStorage.removeItem('key_word');
+        }else{
+            reoderf();
+        }
+    });
+}
+
